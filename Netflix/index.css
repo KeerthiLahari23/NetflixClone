@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+  }
+  
+body{
+    background-color:black;
+    color:white;
+}
+
+/*----------------------------Header-------------------*/
+.header{
+    height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg-image.png);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px;
+}
+.nav-logo{
+    width: 150px;
+}
+.navbar-items{
+    display: flex;
+}
+.nav-item{
+    margin-left: 10px;
+}
+
+.sign-in-button{
+    border:none;
+    outline:none;
+    cursor: pointer;
+    background-color: red;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 11px 10px;
+}
+#select-language{
+    background-color: transparent;
+    outline:none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 11px 10px;
+    
+}
+.header-content{
+    text-align: center;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+
+.email-signup{
+    margin-top: 10px;
+}
+
+.email-input{
+    background-color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.get-started-btn{
+background-color: red;
+color: #fff;
+font-size: 15px;
+padding: 10px;
+border: none;
+outline: none;
+}
+/*--------------main-------------------*/
+.main{
+    padding: 50px 20px;
+    font-size: 32px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+.image{
+    width:640px;
+}
+
+.faq{
+    text-align: center;
+    margin-top:20px;
+}
+.faq h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 35px;
+}
+
+.unordered-list{
+    margin: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.list-item{
+list-style-type: none;
+width:100%;
+padding: 5px;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303030;
+    padding: 20px;
+    font-size: 18px;
+}
+label::after{
+    content:"+";
+}
+input[type="radio"]{
+    display: none;
+}
+.content{
+    max-height: 0;
+    background-color: #303030;
+    text-align: left;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+input[type="radio"]:checked+label+.content{
+max-height: 500px;
+padding: 30px 20px;
+}
+
+.footer{
+    border-top:6px solid #333;
+    padding: 50px;
+    color:#777;
+}
+
+.footer h3{
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.row{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color:#777;
+    margin:20px;
+}
